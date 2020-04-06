@@ -4,10 +4,14 @@ pipeline {
 	// agent { docker { image 'node:13.8'} }
     stages {
 	    stage('Build') {
-		    echo "Build"
+			steps {
+		        echo "Build"
+			}
 	    }
 	    stage('Test') {
-		    echo "Test"
+			steps {
+		        echo "Test"
+			}
 	    }
     }
 }
